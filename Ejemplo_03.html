@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo 03</title>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").css({"background-color": "cyan", "font-size": "200%"});
+    });
+});
+</script>
+</head>
+<body>
+
+<h2>Ejemplo manipulacion del CSS por jquery</h2>
+
+<p style="background-color:#ff0000">Parrafo 1.</p>
+<p style="background-color:#00ff00">Parrafo 2.</p>
+<p style="background-color:#ff0000">Parrafo 3.</p>
+
+<p>Parrafo 4.</p>
+
+<button>Cambiar el color de fondo y altura del texto</button>
+
+</body>
+</html>

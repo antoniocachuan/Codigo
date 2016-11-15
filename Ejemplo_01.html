@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo 01</title>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").animate({left: '250px'});
+    });
+});
+</script>
+</head>
+<body>
+
+<button>Moverse!</button>
+
+<p>El cuadro se movera hasta alcanzar el valor de 250px respecto al margen izquierdo. </p>
+
+<div style="background:#558ABB;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>

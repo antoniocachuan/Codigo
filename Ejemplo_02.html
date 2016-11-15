@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo 02</title>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script>
+$(document).ready(function(){
+   $("button").click(function(){
+       $.ajax({
+	   		url: 'http://html5rocks-cors.s3-website-us-east-1.amazonaws.com/index.html',
+			contentType: 'text/plain',
+			xhrFields: {
+	    		withCredentials: false
+	  		},
+			headers: { },
+			success: function() {$("#div1").html("Se realizo la peticion correctamente a html5rocks") },
+			error: function() { $("#div1").html("ERROR") }
+		});
+    });
+});
+</script>
+</head>
+<body>
+
+<div id="div1"><h2>Ajax llamar a una pagina web externa</h2></div>
+
+<button>Realizar peticion</button>
+
+</body>
+</html>
+
+
